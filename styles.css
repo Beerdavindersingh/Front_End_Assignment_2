@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Merriweather&display=swap');
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+}
+
+header, section, footer {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #3498db; 
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #2ecc71; 
+    font-weight: 700;
+}
+
+a {
+    color: #e74c3c; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-weight: 300; 
+}
+
+header img {
+    width: 100%; 
+    max-width: 300px;
+    height: auto;
+}
+
+section {
+    padding: 15px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-experience {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    #skills, #Experience {
+        width: 48%;
+        text-align: left;
+    }
+
+    header img {
+        width: 250px; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1100px;
+    }
+
+    .skills-experience {
+        gap: 40px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
